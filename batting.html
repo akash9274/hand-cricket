@@ -1,0 +1,63 @@
+<html>
+
+<head>
+   <title>
+        BATTING
+   </title> 
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+  body {
+	background: linear-gradient(45deg,#020024,#4545b2,#00d4ff);
+	background-size: 400% 400%;
+	animation: gradient 15s ease infinite;
+}
+#button{
+    height: 50px;
+    width: 100px;
+    font-size: 30px;
+    margin-left: 5%;
+    margin-top: 5%;
+}
+
+#home{
+    font-size: 20px;
+    margin-left: 5%;
+}
+
+#button:hover{
+    background-color: red;
+}
+
+</style> 
+
+
+</head>
+<body>
+    <button id="home" onclick=location.href="index.html">
+        INDEX PAGE
+    </button>
+    <h1>
+        ENTER YOUR VALUE
+    </h1>
+    <input type="button" value="1" id="button" onclick="getvalue(1)">
+    <input type="button" value="2" id="button" onclick="getvalue(2)">
+    <input type="button" value="3" id="button" onclick="getvalue(3)">
+    <input type="button" value="4" id="button" onclick="getvalue(4)">
+    <input type="button" value="5" id="button" onclick="getvalue(5)">
+    <input type="button" value="6" id="button" onclick="getvalue(6)">
+    <br><br><br><br>
+
+    <div id = "player">
+    </div>
+    <br>
+    <div id="comp">
+    </div>
+    <br>
+    <div id="score">
+    </div>
+    <br>
+
+    <script src="batting.js">
+    </script>
+</body>
+</html>
